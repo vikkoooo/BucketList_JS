@@ -57,4 +57,6 @@ console.log(myStr);
 	  that is very similar to the insertAdjecentElement that will take your HTML string and add it
 		to the list. Try to add your new item to the beginning of the list. 
 */
-bucketList.innerHTML += myStr;
+// bucketList.innerHTML += myStr; // Solution 1
+bucketList.insertAdjacentHTML("afterbegin", myStr); // Solution 2
+
